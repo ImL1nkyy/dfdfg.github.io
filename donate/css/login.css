@@ -1,0 +1,137 @@
+.container__keyForm {
+  backdrop-filter: blur(0);
+  position: relative;
+  margin-top: 70px;
+  z-index: 100;
+}
+
+.keyForm__block {
+  height: 515px;
+}
+
+.keyForm__logo {
+  margin-bottom: 60px;
+}
+.keyForm__restore {
+  font-weight: 500;
+  font-size: 15.5596px;
+  line-height: 140%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 36px;
+}
+
+.keyForm__restore span {
+  color: #fff;
+  cursor: pointer;
+}
+.buttonForm {
+  cursor: pointer;
+  padding: 20px 90px 20px 70px;
+  font-size: 15px;
+}
+
+@media (max-width: 380px) {
+  .buttonForm {
+    cursor: pointer;
+    padding: 20px 82px 20px 52px;
+    font-size: 15px;
+  }
+}
+.img-arm {
+  position: relative;
+}
+.img-arm img {
+  position: absolute !important;
+  z-index: 20;
+  right: 0;
+  overflow-y: hidden;
+}
+.squad {
+  position: relative;
+}
+.squad::after {
+  content: "";
+  position: absolute;
+  left: -280px;
+  top: 200px;
+  width: 400.58px;
+  height: 400.58px;
+  background: rgba(172, 23, 23, 0.7);
+  filter: blur(42px);
+  transform: rotate(60deg);
+  z-index: 5;
+}
+.squad::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  width: 322.29px;
+  height: 322.29px;
+  right: 200px;
+  top: 400px;
+  background: rgba(172, 23, 23, 0.7);
+  filter: blur(42px);
+  transform: rotate(60deg);
+}
+
+footer {
+  margin-top: 300px;
+  z-index: 12000;
+}
+input[type="password"] {
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    outline: none;
+    width: 100%;
+    background: #0B0202 !important;
+    color: #FFDADA;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 19px 0 19px 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    outline: none;
+    width: 100%;
+    background: #0B0202 !important;
+    color: #FFDADA;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 19px 0 19px 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 780px) {
+    .img-arm img{
+       display: none;
+    }
+    .squad::after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+      .squad::before {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+  }
+  
